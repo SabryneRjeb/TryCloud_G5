@@ -19,7 +19,7 @@ public class TC001 extends TestBase {
                 "Failed, The URL is not the same");
 
  // comment
-
+"//*[@id='appmenu']/li/span"
     }
 
 
