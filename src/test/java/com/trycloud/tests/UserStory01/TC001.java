@@ -18,6 +18,8 @@ public class TC001 extends TestBase {
  Assert.assertTrue(driver.getCurrentUrl().equals("https://app.trycloud.net/index.php/apps/files/?dir=/&fileid=22622"),
                 "Failed, The URL is not the same");
 
+ // comment
+
     }
 
 
