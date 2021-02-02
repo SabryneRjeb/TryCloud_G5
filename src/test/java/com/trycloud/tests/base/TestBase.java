@@ -35,4 +35,12 @@ public abstract class TestBase {
         Thread.sleep(2000);
     }
 
+
+    @AfterMethod
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(5000);
+        driver.quit();
+
+    }
+
 }
