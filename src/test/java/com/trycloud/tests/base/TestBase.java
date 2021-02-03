@@ -34,8 +34,5 @@ public abstract class TestBase {
         loginButton.click();
         Thread.sleep(2000);
     }
-    //@AfterMethod
-    //  public void tearDown(){
-    // driver.close();
-    //  }
+
 }
