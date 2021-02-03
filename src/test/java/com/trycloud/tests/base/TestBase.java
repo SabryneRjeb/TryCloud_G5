@@ -12,7 +12,7 @@ public abstract class TestBase {
     @BeforeMethod
     public void setUpMethod() throws InterruptedException {
         driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        1. Story: As a user, I should be able to login.
 //                Test case #1 - verify user login successfully
