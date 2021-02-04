@@ -1,6 +1,7 @@
 package com.trycloud.tests.Kamal.userStory04;
 
 import com.trycloud.tests.base.TestBase;
+import com.trycloud.tests.base.TestBase2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -27,7 +28,7 @@ public class testCase0102 extends TestBase {
         WebElement chat = driver.findElement(By.xpath("//div[@data-user='Employee1']"));
         chat.click();
         WebElement message = driver.findElement(By.xpath("//div[@class='message']"));
-        message.sendKeys("Hello How Are You");
+        message.sendKeys("You are being Tested");
         WebElement send = driver.findElement(By.xpath("//input[@class='submit icon-confirm has-tooltip']"));
         send.click();
 
