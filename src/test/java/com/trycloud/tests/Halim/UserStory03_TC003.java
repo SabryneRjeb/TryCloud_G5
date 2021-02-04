@@ -12,7 +12,7 @@ public class UserStory03_TC003 extends TestBase {
     @Test
     public void addFileToFavoritesTest(){
 
-        WebElement actionMenu = driver.findElement(By.xpath("(//a[@class='action action-menu permanent'])[2]"));
+        WebElement actionMenu = driver.findElement(By.xpath("//tr[@data-file='group5_1']/td[2]/a/span/a[2]"));
         actionMenu.click();
 
         BrowserUtils.sleep(1);
@@ -27,7 +27,7 @@ public class UserStory03_TC003 extends TestBase {
 
         BrowserUtils.sleep(1);
 
-        WebElement addedFile = driver.findElement(By.xpath("//li[@data-id='-group5_1']"));
+        WebElement addedFile = driver.findElement(By.xpath("(//tbody)[3]/tr/td/a[@href='/index.php/apps/files?dir=//group5_1']"));
         Assert.assertTrue(addedFile.isDisplayed());
 
     }
