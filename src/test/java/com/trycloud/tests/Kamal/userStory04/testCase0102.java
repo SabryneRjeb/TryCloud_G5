@@ -1,6 +1,7 @@
 package com.trycloud.tests.Kamal.userStory04;
 
 import com.trycloud.tests.base.TestBase;
+import com.trycloud.tests.base.TestBase2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
