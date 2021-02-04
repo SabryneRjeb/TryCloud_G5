@@ -32,7 +32,8 @@ public class UserStory03_TC008_2 extends TestBase {
         submitButton.click();
 
         // 6.Verify the comment is displayed in the comment section.
-        WebElement displayComment = driver.findElement(By.xpath("//div[@class='date has-tooltip live-relative-timestamp']"));
+
+        WebElement displayComment = driver.findElement(By.xpath("(//div[.='You are being Tested'])[2]"));
         Assert.assertTrue(displayComment.isDisplayed());
 
 

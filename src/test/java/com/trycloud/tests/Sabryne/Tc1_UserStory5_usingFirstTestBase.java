@@ -11,7 +11,7 @@ import java.util.List;
 public class Tc1_UserStory5_usingFirstTestBase extends TestBase {
 
 
-    //Test case #3 - verify users can see all the contact names on the contact list
+    //UserStory5-Test case #3 - verify users can see all the contact names on the contact list
     //1. Login as a user
     //2. Click contacts module
     //3. Verify the contact names are in the list
@@ -25,12 +25,23 @@ public class Tc1_UserStory5_usingFirstTestBase extends TestBase {
         Thread.sleep(2000);
         contactsModule.click();
 
-        WebElement  contactsMenu = driver.findElement(By.xpath("//div[@id='contactsmenu-menu']"));
+       // WebElement  contactsMenu = driver.findElement(By.xpath("//div[@id='contactsmenu-menu']"));
         WebElement contactList = driver.findElement(By.xpath("//div[@id='contactsmenu-contacts']"));
         //3. Verify the contact names are in the list
 
-        Assert.assertTrue(contactsMenu.getText().contains(contactList.getText()),"Verification failed!!");
+       // Assert.assertTrue(contactsMenu.getText().contains(contactList.getText()),"Verification failed!!");
 
+        List<WebElement> allNames = driver.findElements(By.xpath("(//div[@class='body'])/div[@class='full-name']"));
+
+        for(WebElement each : allNames){
+            System.out.println(each.getText());
+
+            if(contactList.getText().equals(each.getText())){
+                Assert.assertTrue(true);
+            }else{
+                Assert.assertFalse(false,"Verification Failed!!");
+            }
+        }
 
 
     }
