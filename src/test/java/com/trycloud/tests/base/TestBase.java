@@ -1,5 +1,6 @@
 package com.trycloud.tests.base;
 import com.google.common.base.Verify;
+import com.utilities.BrowserUtils;
 import com.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,11 +37,11 @@ public abstract class TestBase {
     }
 
 
-//    @AfterMethod
-  //  public void tearDown() throws InterruptedException {
-    //    Thread.sleep(5000);
-      //  driver.quit();
+  @AfterMethod
+   public void tearDown() throws InterruptedException {
+      BrowserUtils.sleep(5);
+      driver.quit();
 
-    //}
+    }
 
 }
