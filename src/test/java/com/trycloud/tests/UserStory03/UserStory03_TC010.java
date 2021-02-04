@@ -1,4 +1,4 @@
-package com.trycloud.tests.Halim;
+package com.trycloud.tests.UserStory03;
 
 import com.trycloud.tests.base.TestBase;
 import org.testng.annotations.Test;
