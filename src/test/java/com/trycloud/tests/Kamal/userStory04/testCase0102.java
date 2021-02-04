@@ -27,7 +27,7 @@ public class testCase0102 extends TestBase {
         WebElement chat = driver.findElement(By.xpath("//div[@data-user='Employee1']"));
         chat.click();
         WebElement message = driver.findElement(By.xpath("//div[@class='message']"));
-        message.sendKeys("Hello How Are You");
+        message.sendKeys("You are being Tested");
         WebElement send = driver.findElement(By.xpath("//input[@class='submit icon-confirm has-tooltip']"));
         send.click();
 
