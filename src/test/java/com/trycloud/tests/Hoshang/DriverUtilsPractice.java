@@ -13,11 +13,12 @@ public class DriverUtilsPractice {
     @Test
     public void googleSearchTest() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("googleUrl"));
+        String url = ConfigurationReader.getProperty("googleUrl");
+        Driver.getDriver().get(url);
 
         WebElement searchBox = Driver.getDriver().findElement(By.name("q"));
 
-        String searchValue = "wooden spoon";
+        String searchValue = ConfigurationReader.getProperty("searchValue");
 
         searchBox.sendKeys(searchValue + Keys.ENTER);
 
