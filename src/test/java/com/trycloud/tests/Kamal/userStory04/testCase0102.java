@@ -30,6 +30,9 @@ public class testCase0102 extends TestBase {
         message.sendKeys("You are being Tested");
         WebElement send = driver.findElement(By.xpath("//input[@class='submit icon-confirm has-tooltip']"));
         send.click();
+        WebElement messageDisplayed = driver.findElement(By.xpath("(//div[.='You are being Tested'])[1]"));
+        Assert.assertTrue(messageDisplayed.isDisplayed());
+
 
 
     }
