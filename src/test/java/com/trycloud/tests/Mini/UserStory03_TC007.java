@@ -22,7 +22,7 @@ public class UserStory03_TC007 extends TestBase {
         plusButton.click();
 
         // 4.Click “upload file”
-        String path="/Users/minibae/Desktop/GitPractice/Screen Shot 2021-02-02 at 4.44.49 PM (2).png";
+        String path="C:\\Users\\HP\\Desktop\\Capture.PNG";
 
         WebElement uploadFile= driver.findElement(By.xpath("//span[.='Upload file']"));
         uploadFile.sendKeys(path);
