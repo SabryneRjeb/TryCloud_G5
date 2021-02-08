@@ -9,7 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
-    private Driver() {}
+    private Driver() {
+    }
 
     private static WebDriver driver;
 
@@ -25,7 +26,7 @@ public class Driver {
                 driver.manage().window().maximize();
                 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-            } else if (browser.equalsIgnoreCase("firefox")){
+            } else if (browser.equalsIgnoreCase("firefox")) {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
